@@ -1,0 +1,21 @@
+.notification {
+  padding: 15px;
+  margin: 15px auto;
+  width: 80%;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 2px solid #28a745;
+}
+
+.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 2px solid #dc3545;
+}

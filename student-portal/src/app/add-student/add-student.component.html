@@ -1,0 +1,22 @@
+<h2>➕ Add New Student</h2>
+
+<!-- ✅ Show success message -->
+<div *ngIf="showSuccess" style="color: green; background: #e0ffe0; padding: 10px; border: 1px solid green;">
+  {{ successMessage }}
+</div>
+
+<!-- ✅ Show error message -->
+<div *ngIf="showError" style="color: red; background: #ffe0e0; padding: 10px; border: 1px solid red;">
+  {{ errorMessage }}
+</div>
+
+<form [formGroup]="studentForm" (ngSubmit)="onSubmit()">
+  <label>Name: <input formControlName="name" /></label><br />
+  <label>Email: <input formControlName="email" /></label><br />
+  <label>Course: <input formControlName="course" /></label><br />
+  <label>Date of Birth:
+    <input type="date" formControlName="dob" />
+  </label><br /><br />
+
+  <button type="submit">Add Student</button>
+</form>

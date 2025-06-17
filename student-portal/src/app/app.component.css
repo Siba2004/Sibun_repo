@@ -1,0 +1,79 @@
+header {
+  background-color: #34495e;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.nav-buttons {
+  margin-top: 15px;
+}
+
+.nav-btn {
+  background-color: #1abc9c;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: #16a085;
+}
+
+.nav-btn.active {
+  background-color: #f39c12;
+}
+/* Navbar styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  padding: 10px 20px;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo styles */
+.logo {
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+/* App title */
+.app-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 20px;
+  flex-grow: 1;
+}
+
+/* Buttons */
+.nav-buttons button {
+  margin: 0 8px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #2a5298;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nav-buttons button:hover {
+  background-color: #dce6f1;
+}

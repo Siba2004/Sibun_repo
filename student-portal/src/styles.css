@@ -1,0 +1,115 @@
+/* ========== GLOBAL ========== */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  animation: lightingBackground 12s infinite alternate;
+  transition: background-color 1s ease-in-out;
+  min-height: 100vh;
+}
+
+/* ========== NAVIGATION ========== */
+div[style*="border-bottom"] {
+  display: flex;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  justify-content: flex-start;
+}
+
+div[style*="border-bottom"] button {
+  background: linear-gradient(45deg, #ff6ec4, #7873f5);
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  margin-right: 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 8px #fff, 0 0 15px #ff6ec4;
+}
+
+div[style*="border-bottom"] button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px #fff, 0 0 20px #ff6ec4;
+}
+
+/* ========== FORM AREA ========== */
+form {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 500px;
+  margin-top: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+}
+
+button[type="submit"] {
+  background: linear-gradient(to right, #00c9ff, #92fe9d);
+  color: #000;
+  padding: 12px 20px;
+  border: none;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #00c9ff;
+  transition: all 0.3s;
+}
+
+button[type="submit"]:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px #92fe9d;
+}
+
+/* ========== HEADINGS ========== */
+h2 {
+  color: #333;
+  text-shadow: 0 0 5px #fff, 0 0 10px #f0f;
+}
+
+/* ========== NOTIFICATION ========== */
+.success, .error {
+  font-weight: bold;
+  padding: 12px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  animation: fadeIn 0.3s ease-in;
+}
+
+.success {
+  background-color: #d1ffd6;
+  color: #146c43;
+  border-left: 6px solid #28a745;
+}
+
+.error {
+  background-color: #ffe1e1;
+  color: #a11a1a;
+  border-left: 6px solid #dc3545;
+}
+
+/* ========== ANIMATIONS ========== */
+@keyframes lightingBackground {
+  0% { background-color: #ffeaa7; }
+  25% { background-color: #fab1a0; }
+  50% { background-color: #a29bfe; }
+  75% { background-color: #81ecec; }
+  100% { background-color: #fdcb6e; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
